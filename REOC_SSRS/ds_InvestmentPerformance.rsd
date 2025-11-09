@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>REOC</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@StartDate">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@EndDate">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>SELECT
+    d.fulldate,
+    pf.portfolio_name,
+    inv.investor_name,
+    SUM(f.investment_amount)  AS TotalInvested,
+    SUM(f.Annual_Rent_Profit) AS AnnualProfit,
+    AVG(NULLIF(f.ROI,0))      AS AvgROI,
+    SUM(f.FMP)                AS TotalFMP
+FROM dbo.vw_FactInvestment_Expanded f
+LEFT JOIN dbo.DIM_Portfolio pf ON f.portfolio_fk = pf.portfolio_sk
+LEFT JOIN dbo.dim_investor inv ON f.investor_fk  = inv.investor_sk
+JOIN dbo.DIM_TABLE_DATE d       ON f.fulldate = d.fulldate
+WHERE d.fulldate BETWEEN @StartDate AND @EndDate
+GROUP BY d.fulldate, pf.portfolio_name, inv.investor_name
+ORDER BY d.fulldate;
+</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="fulldate">
+        <DataField>fulldate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="portfolio_name">
+        <DataField>portfolio_name</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="investor_name">
+        <DataField>investor_name</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TotalInvested">
+        <DataField>TotalInvested</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="AnnualProfit">
+        <DataField>AnnualProfit</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="AvgROI">
+        <DataField>AvgROI</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="TotalFMP">
+        <DataField>TotalFMP</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

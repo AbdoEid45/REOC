@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet2">
+    <Query>
+      <DataSourceReference>REOC</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@StartDate">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@EndDate">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Boolean</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@ProjectPK">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@EmployeeSK">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Boolean</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@PaymentMethod">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>SELECT
+    d.fulldate,
+    d.year, d.month,
+    p.project_name,
+    e.Employee_name,
+    pm.type AS PaymentMethod,
+    SUM(f.amount)          AS TotalAmount,
+    SUM(f.discount_amount) AS TotalDiscount,
+    SUM(f.commission)      AS TotalCommission,
+    SUM(f.tax)             AS TotalTax,
+    COUNT(*)               AS TxnCount
+FROM dbo.vw_FactTransaction_Expanded f
+LEFT JOIN dbo.[DIM(PROJECT)] p   ON f.project_FK = p.contractor_sk_pk
+LEFT JOIN dbo.DIM_Employee e     ON f.employee_sk = e.employee_sk
+LEFT JOIN dbo.[DIM_Payment method] pm ON f.payment_method_number = pm.payment_method_number
+JOIN dbo.DIM_TABLE_DATE d        ON f.fulldate = d.fulldate
+WHERE d.fulldate BETWEEN @StartDate AND @EndDate
+  AND (@ProjectPK IS NULL OR p.contractor_sk_pk = @ProjectPK)
+  AND (@EmployeeSK IS NULL OR e.employee_sk = @EmployeeSK)
+  AND (@PaymentMethod IS NULL OR pm.payment_method_number = @PaymentMethod)
+GROUP BY d.fulldate, d.year, d.month, p.project_name, e.Employee_name, pm.type
+ORDER BY d.fulldate;
+</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="fulldate">
+        <DataField>fulldate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="year">
+        <DataField>year</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="month">
+        <DataField>month</DataField>
+        <rd:TypeName>System.Byte</rd:TypeName>
+      </Field>
+      <Field Name="Employee_name">
+        <DataField>Employee_name</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="project_name">
+        <DataField>project_name</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PaymentMethod">
+        <DataField>PaymentMethod</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TotalAmount">
+        <DataField>TotalAmount</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="TotalDiscount">
+        <DataField>TotalDiscount</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="TotalCommission">
+        <DataField>TotalCommission</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="TotalTax">
+        <DataField>TotalTax</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="TxnCount">
+        <DataField>TxnCount</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

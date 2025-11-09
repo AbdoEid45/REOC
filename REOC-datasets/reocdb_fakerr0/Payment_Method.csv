@@ -1,0 +1,601 @@
+payment_method_number,type
+1,Online
+2,Online
+3,Bank Transfer
+4,Online
+5,Cash
+6,Bank Transfer
+7,Credit Card
+8,Cash
+9,Cash
+10,Cash
+11,Cash
+12,Bank Transfer
+13,Credit Card
+14,Credit Card
+15,Online
+16,Cheque
+17,Bank Transfer
+18,Credit Card
+19,Bank Transfer
+20,Bank Transfer
+21,Online
+22,Credit Card
+23,Cheque
+24,Cheque
+25,Cheque
+26,Cash
+27,Credit Card
+28,Cash
+29,Cash
+30,Cash
+31,Online
+32,Online
+33,Bank Transfer
+34,Bank Transfer
+35,Credit Card
+36,Credit Card
+37,Online
+38,Bank Transfer
+39,Bank Transfer
+40,Cash
+41,Cheque
+42,Cheque
+43,Cheque
+44,Online
+45,Cheque
+46,Cheque
+47,Cash
+48,Credit Card
+49,Online
+50,Bank Transfer
+51,Cash
+52,Cheque
+53,Bank Transfer
+54,Cash
+55,Online
+56,Cheque
+57,Online
+58,Cash
+59,Bank Transfer
+60,Credit Card
+61,Cheque
+62,Online
+63,Bank Transfer
+64,Bank Transfer
+65,Credit Card
+66,Cash
+67,Credit Card
+68,Credit Card
+69,Cash
+70,Cash
+71,Cash
+72,Bank Transfer
+73,Bank Transfer
+74,Cheque
+75,Cheque
+76,Credit Card
+77,Credit Card
+78,Cheque
+79,Online
+80,Credit Card
+81,Online
+82,Online
+83,Cash
+84,Bank Transfer
+85,Cheque
+86,Bank Transfer
+87,Cheque
+88,Bank Transfer
+89,Cheque
+90,Bank Transfer
+91,Cash
+92,Online
+93,Cheque
+94,Online
+95,Cheque
+96,Cheque
+97,Cash
+98,Bank Transfer
+99,Cheque
+100,Bank Transfer
+101,Cash
+102,Credit Card
+103,Online
+104,Cheque
+105,Cash
+106,Bank Transfer
+107,Cheque
+108,Bank Transfer
+109,Credit Card
+110,Cheque
+111,Online
+112,Cheque
+113,Online
+114,Bank Transfer
+115,Cheque
+116,Cash
+117,Cash
+118,Credit Card
+119,Cash
+120,Credit Card
+121,Bank Transfer
+122,Online
+123,Bank Transfer
+124,Online
+125,Online
+126,Credit Card
+127,Cash
+128,Cash
+129,Credit Card
+130,Credit Card
+131,Bank Transfer
+132,Credit Card
+133,Cash
+134,Credit Card
+135,Credit Card
+136,Online
+137,Credit Card
+138,Bank Transfer
+139,Credit Card
+140,Cheque
+141,Cheque
+142,Online
+143,Online
+144,Cheque
+145,Online
+146,Online
+147,Cash
+148,Cash
+149,Credit Card
+150,Cheque
+151,Bank Transfer
+152,Cheque
+153,Cheque
+154,Cash
+155,Cash
+156,Online
+157,Bank Transfer
+158,Cash
+159,Online
+160,Bank Transfer
+161,Cash
+162,Cheque
+163,Cheque
+164,Bank Transfer
+165,Bank Transfer
+166,Cash
+167,Cash
+168,Bank Transfer
+169,Bank Transfer
+170,Online
+171,Online
+172,Online
+173,Cheque
+174,Cheque
+175,Online
+176,Online
+177,Bank Transfer
+178,Cheque
+179,Online
+180,Credit Card
+181,Cash
+182,Online
+183,Cheque
+184,Online
+185,Credit Card
+186,Bank Transfer
+187,Cheque
+188,Bank Transfer
+189,Cash
+190,Bank Transfer
+191,Online
+192,Credit Card
+193,Bank Transfer
+194,Credit Card
+195,Cheque
+196,Cheque
+197,Online
+198,Online
+199,Online
+200,Credit Card
+201,Cash
+202,Cash
+203,Cash
+204,Cheque
+205,Cheque
+206,Cash
+207,Online
+208,Bank Transfer
+209,Cash
+210,Bank Transfer
+211,Cash
+212,Bank Transfer
+213,Online
+214,Cheque
+215,Cash
+216,Cash
+217,Online
+218,Credit Card
+219,Cash
+220,Bank Transfer
+221,Online
+222,Credit Card
+223,Cash
+224,Cash
+225,Cheque
+226,Credit Card
+227,Online
+228,Bank Transfer
+229,Cash
+230,Online
+231,Cheque
+232,Cash
+233,Credit Card
+234,Online
+235,Bank Transfer
+236,Cheque
+237,Online
+238,Cash
+239,Bank Transfer
+240,Cash
+241,Cash
+242,Credit Card
+243,Credit Card
+244,Cash
+245,Cheque
+246,Credit Card
+247,Credit Card
+248,Credit Card
+249,Credit Card
+250,Bank Transfer
+251,Cash
+252,Bank Transfer
+253,Online
+254,Online
+255,Online
+256,Bank Transfer
+257,Cash
+258,Online
+259,Credit Card
+260,Online
+261,Cheque
+262,Credit Card
+263,Credit Card
+264,Credit Card
+265,Online
+266,Credit Card
+267,Cheque
+268,Bank Transfer
+269,Cheque
+270,Cash
+271,Credit Card
+272,Cheque
+273,Online
+274,Cash
+275,Cheque
+276,Credit Card
+277,Online
+278,Credit Card
+279,Cash
+280,Cheque
+281,Credit Card
+282,Cash
+283,Online
+284,Cheque
+285,Cheque
+286,Cash
+287,Cheque
+288,Online
+289,Online
+290,Cheque
+291,Credit Card
+292,Credit Card
+293,Online
+294,Credit Card
+295,Cash
+296,Bank Transfer
+297,Cheque
+298,Cash
+299,Online
+300,Bank Transfer
+301,Online
+302,Bank Transfer
+303,Cash
+304,Bank Transfer
+305,Credit Card
+306,Cash
+307,Cheque
+308,Online
+309,Credit Card
+310,Cheque
+311,Bank Transfer
+312,Credit Card
+313,Cheque
+314,Cash
+315,Bank Transfer
+316,Cheque
+317,Bank Transfer
+318,Cheque
+319,Online
+320,Cash
+321,Credit Card
+322,Cheque
+323,Bank Transfer
+324,Cash
+325,Credit Card
+326,Bank Transfer
+327,Cash
+328,Bank Transfer
+329,Cash
+330,Credit Card
+331,Credit Card
+332,Bank Transfer
+333,Cash
+334,Cheque
+335,Credit Card
+336,Cheque
+337,Cheque
+338,Online
+339,Bank Transfer
+340,Bank Transfer
+341,Bank Transfer
+342,Cash
+343,Credit Card
+344,Credit Card
+345,Online
+346,Online
+347,Online
+348,Cheque
+349,Bank Transfer
+350,Cash
+351,Credit Card
+352,Cash
+353,Bank Transfer
+354,Bank Transfer
+355,Credit Card
+356,Cheque
+357,Online
+358,Cheque
+359,Bank Transfer
+360,Bank Transfer
+361,Cheque
+362,Online
+363,Online
+364,Bank Transfer
+365,Online
+366,Online
+367,Credit Card
+368,Credit Card
+369,Cash
+370,Cheque
+371,Bank Transfer
+372,Online
+373,Cash
+374,Credit Card
+375,Online
+376,Cheque
+377,Credit Card
+378,Bank Transfer
+379,Online
+380,Cash
+381,Bank Transfer
+382,Online
+383,Online
+384,Online
+385,Online
+386,Online
+387,Bank Transfer
+388,Cheque
+389,Cheque
+390,Bank Transfer
+391,Cheque
+392,Cash
+393,Cash
+394,Bank Transfer
+395,Cash
+396,Bank Transfer
+397,Cash
+398,Credit Card
+399,Bank Transfer
+400,Online
+401,Cash
+402,Credit Card
+403,Bank Transfer
+404,Cash
+405,Online
+406,Cash
+407,Credit Card
+408,Cheque
+409,Cheque
+410,Credit Card
+411,Credit Card
+412,Bank Transfer
+413,Cheque
+414,Bank Transfer
+415,Cash
+416,Credit Card
+417,Bank Transfer
+418,Credit Card
+419,Bank Transfer
+420,Cash
+421,Cash
+422,Online
+423,Cheque
+424,Online
+425,Cheque
+426,Cash
+427,Bank Transfer
+428,Credit Card
+429,Cash
+430,Cash
+431,Bank Transfer
+432,Cash
+433,Cash
+434,Bank Transfer
+435,Cash
+436,Cheque
+437,Cheque
+438,Cheque
+439,Cheque
+440,Cash
+441,Credit Card
+442,Cheque
+443,Cheque
+444,Cash
+445,Online
+446,Cash
+447,Bank Transfer
+448,Cheque
+449,Bank Transfer
+450,Cheque
+451,Online
+452,Credit Card
+453,Online
+454,Cash
+455,Cash
+456,Bank Transfer
+457,Bank Transfer
+458,Cash
+459,Cash
+460,Cash
+461,Cheque
+462,Online
+463,Cheque
+464,Credit Card
+465,Cheque
+466,Cash
+467,Cheque
+468,Bank Transfer
+469,Cash
+470,Online
+471,Cheque
+472,Cash
+473,Bank Transfer
+474,Bank Transfer
+475,Cheque
+476,Cash
+477,Online
+478,Credit Card
+479,Bank Transfer
+480,Credit Card
+481,Online
+482,Cheque
+483,Bank Transfer
+484,Credit Card
+485,Bank Transfer
+486,Credit Card
+487,Cash
+488,Cash
+489,Cheque
+490,Online
+491,Bank Transfer
+492,Online
+493,Credit Card
+494,Cheque
+495,Cash
+496,Cash
+497,Cheque
+498,Bank Transfer
+499,Online
+500,Credit Card
+501,Online
+502,Cash
+503,Cheque
+504,Cash
+505,Cash
+506,Credit Card
+507,Bank Transfer
+508,Bank Transfer
+509,Credit Card
+510,Cheque
+511,Online
+512,Cheque
+513,Online
+514,Bank Transfer
+515,Cash
+516,Cash
+517,Cheque
+518,Credit Card
+519,Online
+520,Cash
+521,Cheque
+522,Credit Card
+523,Bank Transfer
+524,Credit Card
+525,Bank Transfer
+526,Cheque
+527,Credit Card
+528,Cheque
+529,Bank Transfer
+530,Cash
+531,Cash
+532,Bank Transfer
+533,Online
+534,Online
+535,Cash
+536,Cash
+537,Credit Card
+538,Credit Card
+539,Cash
+540,Online
+541,Credit Card
+542,Bank Transfer
+543,Credit Card
+544,Credit Card
+545,Credit Card
+546,Cheque
+547,Bank Transfer
+548,Cash
+549,Online
+550,Online
+551,Cash
+552,Cheque
+553,Online
+554,Credit Card
+555,Online
+556,Bank Transfer
+557,Bank Transfer
+558,Cash
+559,Cheque
+560,Cheque
+561,Online
+562,Cheque
+563,Cheque
+564,Online
+565,Bank Transfer
+566,Credit Card
+567,Cash
+568,Bank Transfer
+569,Cheque
+570,Cheque
+571,Online
+572,Cash
+573,Credit Card
+574,Online
+575,Online
+576,Credit Card
+577,Credit Card
+578,Cheque
+579,Online
+580,Bank Transfer
+581,Bank Transfer
+582,Online
+583,Credit Card
+584,Cash
+585,Credit Card
+586,Credit Card
+587,Cash
+588,Credit Card
+589,Cash
+590,Online
+591,Cash
+592,Bank Transfer
+593,Cash
+594,Credit Card
+595,Online
+596,Cash
+597,Credit Card
+598,Cash
+599,Online
+600,Online
